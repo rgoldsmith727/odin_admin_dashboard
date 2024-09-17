@@ -28,6 +28,20 @@ body {
   grid-template-rows: 1fr 2fr;
 }
 
+.header-top-row {
+  display: grid;
+  align-items: center;
+  gap: 1rem;
+  grid-template-columns: 1fr 20fr 1fr 1fr 5fr;
+}
+
+.header-top-row input {
+  background-color: #a9a9a96c;
+  border: none;
+  border-radius: 10px;
+  margin-right: 2rem;
+}
+
 .sidebar {
   grid-area: sidebar;
 }
