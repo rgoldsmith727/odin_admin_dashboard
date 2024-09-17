@@ -58,16 +58,11 @@ body {
 
 .header-bottom-row {
   height: 50%;
-  
+
   display: grid;
   align-items: center;
   gap: 1rem;
   grid-template-columns: 1fr 5fr repeat(3, 1fr);
-}
-
-.profile-name {
-  display: grid;
-  grid-template-rows: 1fr 2fr;
 }
 
 .profile-name p,
