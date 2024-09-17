@@ -27,7 +27,7 @@ body {
   padding: 0 1rem;
 
   display: grid;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .header-top-row {
@@ -42,6 +42,32 @@ body {
   border: none;
   border-radius: 10px;
   margin-right: 2rem;
+}
+
+.header-bottom-row {
+  display: grid;
+  align-items: center;
+  gap: 1rem;
+  grid-template-columns: 1fr 5fr repeat(3, 1fr);
+}
+
+.profile-name {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.profile-name p,
+.profile-name h1 {
+  margin: 0;
+}
+
+.profile-name h1 {
+  font-size: 1rem;
+}
+
+.profile-name p {
+  font-size: 0.5rem;
+  place-content: end;
 }
 
 .sidebar {
