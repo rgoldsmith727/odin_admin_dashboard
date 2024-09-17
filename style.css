@@ -24,6 +24,8 @@ body {
 .header {
   grid-area: header;
 
+  padding: 0 1rem;
+
   display: grid;
   grid-template-rows: 1fr 2fr;
 }
