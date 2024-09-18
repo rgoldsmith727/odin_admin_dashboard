@@ -35,8 +35,8 @@ a {
 .container {
   display: grid;
   grid-template: 
-    "sidebar header" 12%
-    "sidebar main-content" 88%
+    "sidebar header" 90px
+    "sidebar main-content" 1fr
     / 20% 80%;
 }
 
