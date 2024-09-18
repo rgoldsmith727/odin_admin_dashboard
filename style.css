@@ -52,7 +52,7 @@ body {
 .header-top-row input {
   background-color: #a9a9a96c;
   border: none;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   margin-right: 2rem;
 }
 
@@ -77,6 +77,16 @@ body {
 .profile-name p {
   font-size: 0.5rem;
   place-content: end;
+}
+
+.header-bottom-row button {
+  background-color: #31397e;
+  color: white;
+  font-weight: bold;
+  font-size: 0.75rem;
+  border: none;
+  border-radius: 0.625rem;
+  padding: 0.5rem 1rem;
 }
 
 .sidebar {
