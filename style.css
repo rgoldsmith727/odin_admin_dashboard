@@ -28,8 +28,6 @@ a {
 }
 
 .container {
-  height: 100vh;
-
   display: grid;
   grid-template: 
     "sidebar header" 15%
@@ -136,6 +134,27 @@ a {
 
 .projects {
   grid-area: projects;
+
+  display: grid;
+  gap: 1rem;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+   
+}
+
+.card {
+  border-left: 5px solid rgb(158, 123, 46);
+  border-radius: 0.5rem;
+  background-color: white;
+  padding: 1rem;
+
+  position: relative;
+}
+
+.card-buttons {
+  margin-top: 1rem;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1rem;
 }
 
 .announcements {
