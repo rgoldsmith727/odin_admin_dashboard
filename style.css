@@ -11,6 +11,20 @@ body {
   font-size: 16px;
 }
 
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  padding: 0.5rem;
+}
+
+ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .icon {
   width: 20px; 
   height: 20px; 
@@ -91,6 +105,27 @@ body {
 
 .sidebar {
   grid-area: sidebar;
+
+  background-color: #31397e;
+  color: white;
+
+  padding: 1rem;
+
+  display: grid;
+  grid-template-rows: 1fr 4fr 2fr 6fr;
+}
+
+.sidebar .icon,
+.sidebar .large-icon {
+  filter: invert(100%);
+}
+
+.sidebar-row-1,
+.sidebar-row-2 ul li,
+.sidebar-row-3 ul li {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 1rem;
 }
 
 .main-content {
