@@ -18,20 +18,25 @@ a {
 }
 
 .icon {
-  width: 20px; 
-  height: 20px; 
+  width: 1.25rem; 
+  height: 1.25rem; 
+}
+
+.medium-icon {
+  width: 1.875rem;
+  height: 1.875rem;
 }
 
 .large-icon {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .container {
   display: grid;
   grid-template: 
-    "sidebar header" 15%
-    "sidebar main-content" 85%
+    "sidebar header" 12%
+    "sidebar main-content" 88%
     / 20% 80%;
 }
 
@@ -128,6 +133,7 @@ a {
   gap: 1rem;
   grid-template: 
     "projects announcements" 1fr
+    "projects announcements" 1fr
     "projects trending" 1fr
     / 3fr 1fr;
 }
@@ -180,4 +186,37 @@ a {
 
 .trending {
   grid-area: trending;
+
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.trending-profile {
+  display: grid;
+  align-items: center;
+  grid-template:
+    "profile-icon profile-name" 1fr
+    "profile-icon profile-descript" 1fr
+    / 1fr 3fr;
+}
+
+.trending-profile img {
+  grid-area: profile-icon;
+  justify-self: center;
+}
+
+.trending-profile h5 {
+  grid-area: profile-name;
+  margin: 0;
+  align-self: self-end;
+}
+
+.trending-profile p {
+  grid-area: profile-descript;
+  margin: 0;
+  align-self: self-start;
 }
