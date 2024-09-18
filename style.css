@@ -122,4 +122,26 @@ a {
 
 .main-content {
   grid-area: main-content;
+
+  padding: 1rem;
+  background-color: #a9a9a96c;
+
+  display: grid;
+  gap: 1rem;
+  grid-template: 
+    "projects announcements" 1fr
+    "projects trending" 1fr
+    / 3fr 1fr;
+}
+
+.projects {
+  grid-area: projects;
+}
+
+.announcements {
+  grid-area: announcements;
+}
+
+.trending {
+  grid-area: trending;
 }
