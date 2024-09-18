@@ -159,7 +159,24 @@ a {
 
 .announcements {
   grid-area: announcements;
+
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
 }
+
+.announcement h4 {
+  margin: 0;
+}
+
+.announcement p {
+  margin-top: 0.25rem;
+}
+
+
 
 .trending {
   grid-area: trending;
